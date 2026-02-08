@@ -1,0 +1,98 @@
+@config "../tailwind.config.js";
+@import "tailwindcss";
+
+/* =========================
+   BASE (Resets + defaults)
+   ========================= */
+
+@layer base {
+  /* Box sizing */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  /* Remove default margins */
+  *:not(dialog) {
+    margin: 0;
+  }
+
+  /* Motion preferences */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      interpolate-size: allow-keywords;
+    }
+  }
+
+  body {
+    @apply font-body;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Media defaults */
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  /* Form elements inherit font */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  /* Text overflow handling */
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+    @apply text-white;
+  }
+
+  /* Better wrapping */
+  p {
+    text-wrap: pretty;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-wrap: balance;
+    @apply font-header;
+  }
+
+  /* Root stacking context */
+  #root,
+  #__next {
+    isolation: isolate;
+  }
+
+  :root{
+    --box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+
+
+
+  h1{
+    @apply text-h1 md:text-h1MD lg:text-h1LG;
+  }
+
+  h1 span{
+    @apply text-primary font-bold tracking-tighter;
+  }
+}
+
+
