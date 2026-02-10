@@ -4,26 +4,43 @@ import { heroProjectImg } from "./data/hero-project-img";
 
 function App() {
   return (
-    <div className="border 
-                    h-auto 
-                    flex 
-                    flex-col 
-                    justify-center 
-                    items-center 
-                    bg-black-100">
-      <h1 className="text-center">
-        i'm a <br /> <span>WEB DEVELOPER</span>
-      </h1>
+    <div className="
+      h-lvh
+      bg-black-100
+      flex
+      justify-center
+      items-end">
+      <div
+        className="
+          relative
+          border 
+          h-[750px] 
+          flex 
+          flex-col 
+          justify-between 
+          items-center 
+          border-1
+          border-red-500
+          ">
+        
+        <h1 className="text-center">
+          i'm a <br /> <span>WEB DEVELOPER</span>
+        </h1>
 
-      <div>
-        {heroProjectImg.map(({ id, img, alt}) =>(
-          <GlassCard key={id}>
-            <img 
-              src={img} 
-              alt={alt}
-              className="rounded-lg relative" />
-          </GlassCard>
-        ))}
+        <div 
+          className="
+            relative 
+            w-[272px] md:w-[640px] lg:w-[790] 
+            h-[145px] md:h-[340px] lg:h-[400]
+            flex 
+            items-center 
+            justify-center">
+          {heroProjectImg.map(({ id, img, alt }, index) => (
+            <GlassCard key={id} index={index}>
+              <img src={img} alt={alt} className="rounded-lg relative z-10" />
+            </GlassCard>
+          ))}
+        </div>
       </div>
     </div>
   );
