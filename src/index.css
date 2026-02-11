@@ -93,6 +93,14 @@
   h1 span{
     @apply text-primary font-bold tracking-tighter;
   }
+
+  h2{
+    @apply text-[26px] md:text-[42px] lg:text-[68px] font-bold tracking-tighter text-base/6 md:text-base/12 lg:text-base/18;
+  }
+
+  section{
+    @apply p-7 md:p-13 lg:p-30;
+  }
 }
 
 
