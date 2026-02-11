@@ -4,8 +4,8 @@ function GlassCard({ children, index }) {
   return (
     <div
       className="
-        w-[272px] md:w-[640px] lg:w-[790]
-        h-[145px] md:h-[340px] lg:h-[400]
+        w-full
+        h-full
         rounded-2xl 
         overflow-hidden 
         p-[8px] 
@@ -15,12 +15,17 @@ function GlassCard({ children, index }) {
         backdrop-blur-xl
         border border-white/30
         shadow-[var(--box-shadow)]
+
+        [--glassCardSpace:26px]
+        md:[--glassCardSpace:42px]
+        lg:[--glassCardSpace:68px]
         "
 
         style={{
-          top: `${index * 24}px`,
+          "--i": index,
+          top: `calc(var(--glassCardSpace) * var(--i) * -1)`,
           bottom: 8,
-          zIndex: 10 + index,
+          zIndex: 10 - index,
           scale: 1 - index * 0.05,
         }}
     >

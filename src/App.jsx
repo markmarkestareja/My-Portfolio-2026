@@ -13,14 +13,11 @@ function App() {
       <div
         className="
           relative
-          border 
-          h-[750px] 
+          h-[370px] md:h-[750px]
           flex 
           flex-col 
           justify-between 
           items-center 
-          border-1
-          border-red-500
           ">
         
         <h1 className="text-center">
@@ -30,14 +27,14 @@ function App() {
         <div 
           className="
             relative 
-            w-[272px] md:w-[640px] lg:w-[790] 
-            h-[145px] md:h-[340px] lg:h-[400]
+            w-[272px] md:w-[640px] lg:w-[790px] 
+            h-[145px] md:h-[340px] lg:h-[400px]
             flex 
             items-center 
             justify-center">
           {heroProjectImg.map(({ id, img, alt }, index) => (
             <GlassCard key={id} index={index}>
-              <img src={img} alt={alt} className="rounded-lg relative z-10" />
+              <img src={img} alt={alt} className="rounded-lg relative z-10 h-full w-full object-cover" />
             </GlassCard>
           ))}
         </div>
