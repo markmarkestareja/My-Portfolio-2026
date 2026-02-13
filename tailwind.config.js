@@ -11,9 +11,10 @@ export default {
                 body: ['Archivo', 'sans-serif'],
             },
             fontSize: {
-                h1: "26px",
+                h1: "32px",
                 h1MD: "42px",
                 h1LG: "68px",
+
             },
             colors: {
                 black: {

@@ -8,15 +8,17 @@ function HeroSection() {
       bg-black-100
       flex
       justify-center
-      items-end">
+      items-end
+      pb-0 md:pb-0 lg:pb-0">
       <div
         className="
           relative
           h-[370px] md:h-[750px]
           flex 
           flex-col 
-          justify-between 
+          justify-center 
           items-center 
+          gap-20
           ">
         
         <h1 className="text-center">
@@ -25,9 +27,10 @@ function HeroSection() {
 
         <div 
           className="
-            relative 
-            w-[272px] md:w-[640px] lg:w-[790px] 
-            h-[145px] md:h-[340px] lg:h-[400px]
+            absolute 
+            bottom-[-200px]
+            w-[272px] md:w-[640px]
+            h-[145px] md:h-[340px]
             flex 
             items-center 
             justify-center">

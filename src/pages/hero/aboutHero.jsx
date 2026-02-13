@@ -1,8 +1,8 @@
 function AboutHero() {
   return (
-    <section className="h-lvh bg-black-200">
-      <div className="w-2/3">
-        <p>about me</p>
+    <section className="h-auto bg-black-200 flex flex-col gap-6 md:gap-13.5">
+      <div className="md:w-3/4 xl:w-1/3 flex flex-col gap-4">
+        <p>ABOUT ME</p>
         <h2>CONTINUOUSLY CRAFTING CODE & CREATIVITY</h2>
       </div>
       <p>
