@@ -4,6 +4,7 @@ import HeroSection from "./pages/hero/hero";
 import ProcessHero from "./pages/hero/processHero";
 import ProjectHero from "./pages/hero/projectHero";
 import ContactHero from "./pages/hero/contactHero";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <ProjectHero />
       <ProcessHero />
       <ContactHero />
+      <Footer />
     </>
   );
 }
