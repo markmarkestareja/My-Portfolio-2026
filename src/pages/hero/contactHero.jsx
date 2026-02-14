@@ -2,7 +2,7 @@ import contactImg from "../../assets/images/hero/contact/contact.jpg";
 
 function ContactHero() {
     return (
-        <section className="flex justify-between items-start gap-4 h-lvh">
+        <section className="flex flex-col md:flex-row justify-between items-start gap-4 h-lvh">
             <div className="">
                 <div className="flex flex-col gap-4">
                     <p className="text-black-100">CONTACT ME</p>
@@ -16,8 +16,8 @@ function ContactHero() {
                 </div>
                 <p className="text-black-300 mt-13.5">Hello, if you find my works interesting or have any inquiries, feel free to fill out the form below or you can also contact me through the contact details provided below.</p>
             </div>
-            <div className=" overflow-hidden h-full flex justify-center">
-                <img className="h-full w-auto object-cover rounded-tl-[250px] rounded-br-[250px]" src={contactImg} alt="Contact" />
+            <div className=" overflow-hidden h-full flex justify-center self-center">
+                <img className="h-full w-auto object-cover rounded-tl-[150px] 2xl:rounded-tl-[200px]  rounded-br-[150px] 2xl:rounded-br-[200px]" src={contactImg} alt="Contact" />
             </div>
         </section>
     )

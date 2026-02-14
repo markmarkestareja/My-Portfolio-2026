@@ -52,19 +52,19 @@ function ProcessHero() {
             <div className="flex flex-col md:flex-row gap-4 w-full">
                 <div className="flex flex-col gap-4 w-full">
                     <div className="bg-black-300 p-8 rounded-3xl flex flex-col gap-8 h-full">
-                        <h2>STAGE 1</h2>
+                        <h3 className="font-bold">STAGE 1</h3>
                         <GenerateStageCard stage={stages.stage1} />
                     </div>
 
                     <div className="bg-black-300 p-8 rounded-3xl flex flex-col gap-8 h-full">
-                        <h2>STAGE 2</h2>
+                        <h3 className="font-bold">STAGE 2</h3>
                         <GenerateStageCard stage={stages.stage2} />
                     </div>
                 </div>
 
                 <div className="bg-black-300 rounded-3xl flex flex-col justify-between gap-8 w-full overflow-hidden">
-                    <div className="p-8">
-                        <h2>STAGE 3</h2>
+                    <div className="p-8 flex flex-col gap-8">
+                        <h3 className="font-bold">STAGE 3</h3>
                         <GenerateStageCard stage={stages.stage3} />
                     </div>
                     <div className="h-1/2 overflow-hidden">
@@ -73,8 +73,8 @@ function ProcessHero() {
                 </div>
 
                 <div className="bg-black-300 rounded-3xl flex flex-col justify-between gap-8 w-full overflow-hidden">
-                    <div className="p-8">
-                        <h2>STAGE 4</h2>
+                    <div className="p-8 flex flex-col gap-8">
+                        <h3 className="font-bold">STAGE 4</h3>
                         <GenerateStageCard stage={stages.stage4} />
                     </div>
                     <div className="h-1/2 overflow-hidden">

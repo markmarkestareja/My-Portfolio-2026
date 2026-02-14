@@ -1,7 +1,7 @@
 function AboutHero() {
   return (
     <section className="h-auto bg-black-200 flex flex-col gap-6 md:gap-13.5">
-      <div className="md:w-3/4 xl:w-1/3 flex flex-col gap-4">
+      <div className="md:w-3/4 xl:w-1/2 flex flex-col gap-4">
         <p>ABOUT ME</p>
         <h2>CONTINUOUSLY CRAFTING CODE & CREATIVITY</h2>
       </div>
