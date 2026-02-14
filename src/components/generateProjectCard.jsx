@@ -28,6 +28,4 @@ function GenerateProjectCard(){
     )
 }
 
-console.log(projects);
-
 export default GenerateProjectCard;
