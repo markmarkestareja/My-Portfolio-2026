@@ -102,6 +102,10 @@
     @apply text-[24px] md:text-[30px] text-base/8;
   }
 
+  h4{
+    @apply font-semibold;
+  }
+
   section{
     @apply p-7 md:p-13 lg:p-30 overflow-hidden;
   }
@@ -112,6 +116,10 @@
 
   a{
     @apply text-primary;
+  }
+
+  ul li a{
+    @apply text-white;
   }
 
 }
