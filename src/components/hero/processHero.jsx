@@ -36,7 +36,7 @@ function ProcessHero() {
     return (
         <section className="bg-black-200 flex flex-col gap-4">
             <div className="flex gap-4">
-                <div className="bg-black-300 p-8 rounded-3xl flex flex-col justify-between gap-8 w-1/2">
+                <div className="bg-black-300 p-8 rounded-3xl flex flex-col justify-between gap-8 w-full md:w-1/2">
                     <div className="flex flex-col gap-4">
                         <p>OUR PROCESS</p>
                         <h2>SO, HOW DO WE DO IT?</h2>

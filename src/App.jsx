@@ -1,21 +1,14 @@
 import "./App.css";
-import AboutHero from "./pages/hero/aboutHero";
-import HeroSection from "./pages/hero/hero";
-import ProcessHero from "./pages/hero/processHero";
-import ProjectHero from "./pages/hero/projectHero";
-import ContactHero from "./pages/hero/contactHero";
-import Footer from "./components/footer";
+import { Routes, Route } from "react-router-dom";
+
+import HeroPage from "./pages/heroPage";
 
 function App() {
   return (
-    
     <>
-      <HeroSection />
-      <AboutHero />
-      <ProjectHero />
-      <ProcessHero />
-      <ContactHero />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<HeroPage />} />
+      </Routes>
     </>
   );
 }

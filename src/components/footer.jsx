@@ -1,7 +1,7 @@
 function Footer(){
     return (
         <>    
-            <section className="w-full bg-black-300 flex flex-col">
+            <section className="w-full bg-black-200 flex flex-col">
                 <div className="w-full flex flex-col lg:flex-row gap-12 lg:justify-between">
                     <div className="self-center w-auto">
                         <svg width="216" height="253" viewBox="0 0 216 253" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,10 +39,11 @@ function Footer(){
                     </div>
                 </div>
 
-                <div>
-                    
-                </div>
+                
             </section>
+            <div className="bg-black-300 flex justify-center text-[12px] font-light">
+                <p className="opacity-75">Copyright © 2026 Mark Estareja. All rights reserved.</p>
+            </div>
         </>
     )
 }
