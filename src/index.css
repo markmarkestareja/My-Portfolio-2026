@@ -122,6 +122,10 @@
     @apply text-white;
   }
 
+  input{
+    @apply w-full h-[60px] text-white bg-black-200 rounded-xl p-4;
+  }
+
 }
 
 
