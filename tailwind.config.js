@@ -23,6 +23,7 @@ export default {
                     300: "#1B1B1B",
                 },
                 white: "#ffffff",
+                offWhite: "#8F8D8D",
                 primary: "#82FF1F ",
             }
         },
