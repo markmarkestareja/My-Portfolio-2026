@@ -1,4 +1,5 @@
 import {projects} from "../data/projects.jsx";
+import BlurText from "./BlurText.jsx";
 
 function GenerateProjectCard(){
     return (
@@ -15,7 +16,15 @@ function GenerateProjectCard(){
                                         );
                                     })}
                                 </ul>
-                                <h3>{title}</h3>
+                                <h3>
+                                    <BlurText 
+                                        text={title}
+                                        delay={200}
+                                        animateBy="words"
+                                        direction="top"
+                                        className="block"
+                                    />
+                                </h3>
                                 <p>{year}</p>
                                 <a href={link}>VISIT THE WEBSITE →</a>
                             </div>
