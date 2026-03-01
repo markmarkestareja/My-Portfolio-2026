@@ -1,4 +1,4 @@
-import contactImg from "../../assets/images/hero/contact/contact.jpg";
+import contactImg from "../../assets/images/hero/contact/contact.webp";
 
 function ContactHero() {
     return (

@@ -1,6 +1,6 @@
-import project1 from '../assets/images/hero/project-1.jpg';
-import project2 from '../assets/images/hero/project-2.jpg';
-import project3 from '../assets/images/hero/project-3.jpg';
+import project1 from '../assets/images/hero/project-1.webp';
+import project2 from '../assets/images/hero/project-2.webp';
+import project3 from '../assets/images/hero/project-3.webp';
 
 export const heroProjectImg = [
     {

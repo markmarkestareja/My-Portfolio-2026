@@ -1,8 +1,8 @@
 
 import GenerateStageCard from "../../components/generateStageCard";
-import handshakeImg from "../../assets/images/hero/process/handShake.jpg";
-import patternImg from "../../assets/images/hero/process/pattern.jpg";
-import laptopImg from "../../assets/images/hero/process/laptop.jpg";
+import handshakeImg from "../../assets/images/hero/process/handShake.webp";
+import patternImg from "../../assets/images/hero/process/pattern.webp";
+import laptopImg from "../../assets/images/hero/process/laptop.webp";
 
 const stages = {
     stage1: [
