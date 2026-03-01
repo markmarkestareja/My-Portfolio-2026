@@ -1,19 +1,34 @@
 import GlassCard from "../../components/glassCard";
 import BlurText from "../BlurText";
+import { GridScan } from '../GridScan';
 import { heroProjectImg } from "../../data/hero-project-img";
 
 function HeroSection() {
   return (
     <section className="
+      relative
       h-lvh
+      overflow-hidden
       bg-black-100
       flex
       justify-center
       items-end
-      pb-0 md:pb-0 lg:pb-0">
+      pb-0 md:pb-0 lg:pb-0"
+      >
+
+        {/* BACKGROUND */}
+        <div className="absolute inset-0 z-0">
+          <GridScan
+            className="w-full h-full"
+            scanColor="#82FF1F"
+            linesColor="#111111"
+            enablePost
+          />
+        </div>
       <div
         className="
           relative
+          z-10
           h-[370px] md:h-[750px]
           flex 
           flex-col 
@@ -36,7 +51,7 @@ function HeroSection() {
             delay={80}
             animateBy="letters"
             direction="top"
-            className="block text-primary font-bold tracking-tighter"
+            className="block font-bold tracking-tighter"
           />
         </h1>
 

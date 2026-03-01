@@ -1,6 +1,4 @@
 function GlassCard({ children, index }) {
-
-
   return (
     <div
       className="
