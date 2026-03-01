@@ -90,9 +90,9 @@
     @apply text-h1 md:text-h1MD lg:text-h1LG;
   }
 
-  h1 span{
+  /* h1 span{
     @apply text-primary font-bold tracking-tighter;
-  }
+  } */
 
   h2{
     @apply text-h1 md:text-h1MD lg:text-h1LG font-bold tracking-tighter text-base/8 md:text-base/12 lg:text-base/18;

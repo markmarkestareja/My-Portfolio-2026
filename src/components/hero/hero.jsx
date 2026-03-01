@@ -1,4 +1,5 @@
 import GlassCard from "../../components/glassCard";
+import BlurText from "../BlurText";
 import { heroProjectImg } from "../../data/hero-project-img";
 
 function HeroSection() {
@@ -21,8 +22,22 @@ function HeroSection() {
           gap-20
           ">
         
-        <h1 className="text-center">
-          i'm a <br /> <span>WEB DEVELOPER</span>
+        <h1 className="text-center flex flex-col justify-center items-center">
+          <BlurText
+            text="i'm a"
+            delay={80}
+            animateBy="letters"
+            direction="top"
+            className="block text-base md:text-xl lg:text-3xl"
+          />
+
+          <BlurText
+            text="WEB DEVELOPER"
+            delay={80}
+            animateBy="letters"
+            direction="top"
+            className="block text-primary font-bold tracking-tighter"
+          />
         </h1>
 
         <div 
